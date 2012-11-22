@@ -1,0 +1,9 @@
+
+<% @paintings.each do |painting| %>
+
+<div class="span3"><%= image_tag painting.image_url(:thumb) if painting.image? %></div>
+  
+    
+<% end %>
+
+
