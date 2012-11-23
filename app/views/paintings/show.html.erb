@@ -3,7 +3,7 @@
 <p>
   <b>Name:</b>
   <%= @painting.name %>
-<%= image_tag @painting.image_url(:thumb) if @painting.image? %>
+<%= image_tag @painting.image_url if @painting.image? %>
 </p>
 
 

@@ -1,8 +1,9 @@
 
 <% @paintings.each do |painting| %>
 
+<%= link_to painting_path(painting) do %>	
 <div class="span3"><%= image_tag painting.image_url(:thumb) if painting.image? %></div>
-  
+<%end%>
     
 <% end %>
 
