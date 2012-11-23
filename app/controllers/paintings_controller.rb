@@ -76,7 +76,7 @@ class PaintingsController < ApplicationController
     @painting.destroy
 
     respond_to do |format|
-      format.html { redirect_to paintings_url }
+      format.html { redirect_to paintings_url, notice: 'Painting was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

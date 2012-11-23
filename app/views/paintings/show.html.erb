@@ -1,11 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
+
+<div class="span7">
   <%= @painting.name %>
 <%= image_tag @painting.image_url if @painting.image? %>
-</p>
+</div>
 
+<div id="actions" class="span2" style="float-right;">
 
-<%= link_to 'Edit', edit_painting_path(@painting) %> |
-<%= link_to 'Back', paintings_path %>
+ <%= link_to 'Edit', edit_painting_path(@painting) %> </br>
+ <%= link_to 'Delete', painting_path(@painting), :confirm => 'Are you sure?', :method => :delete %> </br>
+ <%= link_to 'Back to home',paintings_path %> </br>
+ <%= link_to 'Radio options here' %> </br>
+	
+</div>
