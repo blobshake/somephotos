@@ -3,7 +3,7 @@
 
 <div class="span7">
   <%= @painting.name %>
-<%= image_tag @painting.image_url if @painting.image? %>
+<%= image_tag @painting.image_url(:thumb_big) if @painting.image? %>
 </div>
 
 <div id="actions" class="span2" style="float-right;">

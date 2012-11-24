@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @seller.name %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%= @seller.username %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @seller.email %>
+</p>
+
+<p>
+  <b>Photoallowance:</b>
+  <%= @seller.photoallowance %>
+</p>
+
+<p>
+  <b>Photocount:</b>
+  <%= @seller.photocount %>
+</p>
+
+
+<%= link_to 'Edit', edit_seller_path(@seller) %> |
+<%= link_to 'Back', sellers_path %>

@@ -1,4 +1,6 @@
 Somephoto::Application.routes.draw do
+  resources :sellers
+
   resources :users
 
   resources :paintings
