@@ -1,4 +1,6 @@
 Somephoto::Application.routes.draw do
+  resources :users
+
   resources :paintings
 
   # The priority is based upon order of creation:
